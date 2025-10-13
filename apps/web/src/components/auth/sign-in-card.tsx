@@ -158,6 +158,19 @@ export function SignInCard() {
         >
           {isLoading ? 'Enviando...' : 'Receber link mágico'}
         </button>
+
+        <div style={{ textAlign: 'center' }}>
+          <a
+            href="/auth/forgot-password"
+            style={{
+              color: tokens.colors.primaryAccent,
+              textDecoration: 'none',
+              fontSize: '0.875rem'
+            }}
+          >
+            Esqueceu sua senha?
+          </a>
+        </div>
       </form>
 
       {message ? (
@@ -181,9 +194,20 @@ export function SignInCard() {
         </p>
       ) : null}
 
-      <small style={{ color: tokens.colors.muted, textAlign: 'center' }}>
-        Ao continuar você concorda com a nossa Política de Privacidade e Termos de Uso.
-      </small>
+      <div style={{ textAlign: 'center' }}>
+        <p style={{ color: tokens.colors.muted, margin: 0 }}>
+          Não tem uma conta?{' '}
+          <a
+            href="/auth/sign-up"
+            style={{ color: tokens.colors.primaryAccent, textDecoration: 'none' }}
+          >
+            Cadastre-se
+          </a>
+        </p>
+        <small style={{ color: tokens.colors.muted, marginTop: tokens.spacing.sm, display: 'block' }}>
+          Ao continuar você concorda com a nossa Política de Privacidade e Termos de Uso.
+        </small>
+      </div>
     </div>
   );
 }
