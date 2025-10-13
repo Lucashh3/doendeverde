@@ -16,19 +16,6 @@ export default async function CategoriesPage() {
   // Buscar categorias básicas
   const categories = await fetchCategories();
 
-  // Buscar contagem de posts por categoria
-  const { data: postCounts } = await supabase
-    .from('posts')
-    .select('category_id')
-    .eq('is_deleted', false);
-
-  // Contar posts por categoria (simplificado por enquanto)
-  const categoryCounts = postCounts?.reduce((acc, post) => {
-    // Como não temos relacionamento direto, usamos valor simulado por enquanto
-    acc[post.category_id] = (acc[post.category_id] || 0) + 1;
-    return acc;
-  }, {} as Record<number, number>) || {};
-
   // Dados completos das categorias com contagem (simulada para demonstração)
   const categoriesWithCounts: CategoryInfo[] = categories.map((category, index) => ({
     slug: category.slug,
