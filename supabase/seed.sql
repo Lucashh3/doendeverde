@@ -5,7 +5,11 @@ values
   ('experiencias', 'Experiências', 'Relatos de brisas, viagens e aprendizados da comunidade.', '🌬️'),
   ('cultivo', 'Cultivo', 'Dicas, setups e genética para quem ama cuidar da planta.', '🌱'),
   ('educacao', 'Educação', 'Informação segura sobre usos, legislação e redução de danos.', '📚'),
-  ('cultura-e-memes', 'Cultura & Memes', 'Memes, arte, música e cultura canábica brasileira.', '🎭')
+  ('cultura-e-memes', 'Cultura & Memes', 'Memes, arte, música e cultura canábica brasileira.', '🎭'),
+  ('saude-bem-estar', 'Saúde & Bem-estar', 'Benefícios medicinais, cuidados pessoais e bem-estar relacionado ao uso responsável.', '🩺'),
+  ('politica-legislacao', 'Política & Legislação', 'Atualizações sobre leis, advocacy, direitos e discussões políticas sobre cannabis.', '⚖️'),
+  ('pesquisa-ciencia', 'Pesquisa & Ciência', 'Estudos científicos, descobertas médicas e avanços na pesquisa canábica.', '🔬'),
+  ('sustentabilidade', 'Sustentabilidade', 'Cultivo orgânico, impacto ambiental, práticas ecológicas e consumo consciente.', '🌍')
 on conflict (slug) do update
 set label = excluded.label,
     description = excluded.description,
@@ -38,5 +42,20 @@ values
   ('legalização', 'Legalização'),
   ('indoor', 'Indoor'),
   ('outdoor', 'Outdoor'),
-  ('edibles', 'Edibles')
+  ('edibles', 'Edibles'),
+  ('medicina', 'Medicina'),
+  ('terpenos', 'Terpenos'),
+  ('canabinoides', 'Canabinoides'),
+  ('orgânico', 'Orgânico'),
+  ('permacultura', 'Permacultura'),
+  ('ativismo', 'Ativismo'),
+  ('reforma-da-lei', 'Reforma da Lei'),
+  ('estudos-clínicos', 'Estudos Clínicos'),
+  ('dor-crônica', 'Dor Crônica'),
+  ('ansiedade', 'Ansiedade'),
+  ('epilepsia', 'Epilepsia'),
+  ('sementes', 'Sementes'),
+  ('clonagem', 'Clonagem'),
+  ('poda', 'Poda'),
+  ('floração', 'Floração')
 on conflict (slug) do nothing;
