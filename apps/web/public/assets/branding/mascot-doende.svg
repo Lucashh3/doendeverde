@@ -1,0 +1,27 @@
+<svg width="200" height="220" viewBox="0 0 200 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="faceGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(100 120) scale(80 90)">
+      <stop offset="0" stop-color="#2ECC71"/>
+      <stop offset="0.5" stop-color="#3E9E74"/>
+      <stop offset="1" stop-color="#051C14"/>
+    </radialGradient>
+    <linearGradient id="hatGradient" x1="40" y1="48" x2="160" y2="88" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6C3B99"/>
+      <stop offset="1" stop-color="#8E62C7"/>
+    </linearGradient>
+  </defs>
+  <rect x="16" y="40" width="168" height="168" rx="60" fill="url(#faceGlow)"/>
+  <path d="M32 92C62 108 138 108 168 92C162 70 142 52 100 52C58 52 38 70 32 92Z" fill="#193C2D"/>
+  <path d="M46 78C64 86 136 86 154 78C148 60 128 48 100 48C72 48 52 60 46 78Z" fill="url(#hatGradient)"/>
+  <ellipse cx="70" cy="120" rx="12" ry="16" fill="#051C14"/>
+  <ellipse cx="130" cy="120" rx="12" ry="16" fill="#051C14"/>
+  <circle cx="66" cy="118" r="3.5" fill="#E8F5EC"/>
+  <circle cx="126" cy="118" r="3.5" fill="#E8F5EC"/>
+  <path d="M74 154C86 170 114 170 126 154" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+  <path d="M88 174C96 182 104 182 112 174" stroke="#7BD6A3" stroke-width="5" stroke-linecap="round"/>
+  <path d="M40 140C40 140 28 152 32 172C36 192 58 198 58 198" stroke="#2ECC71" stroke-width="8" stroke-linecap="round"/>
+  <path d="M160 140C160 140 172 152 168 172C164 192 142 198 142 198" stroke="#6C3B99" stroke-width="8" stroke-linecap="round"/>
+  <text x="100" y="28" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-size="18" fill="#F2E9E4">
+    guardião da brisa
+  </text>
+</svg>

@@ -1,0 +1,17 @@
+<svg width="160" height="52" viewBox="0 0 160 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="leafGradient" x1="16" y1="4" x2="44" y2="48" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2ECC71"/>
+      <stop offset="1" stop-color="#6C3B99"/>
+    </linearGradient>
+  </defs>
+  <rect width="160" height="52" rx="12" fill="#051C14"/>
+  <g transform="translate(12 10)">
+    <path d="M28 1C20 7 16 16 16 25C16 34 21 39 27 39C33 39 38 34 38 28C38 21 34 16 30 12C27 9 26 6 28 1Z" fill="url(#leafGradient)"/>
+    <path d="M32 3C29.5 9 29.5 12.5 32 18C33.5 21.5 36 25 36 29C36 34 33 37 28 37C23 37 20 33 20 26C20 17 26 9 32 3Z" fill="rgba(255,255,255,0.12)"/>
+    <circle cx="12" cy="28" r="5" fill="#2ECC71" opacity="0.85"/>
+    <circle cx="5" cy="20" r="3.5" fill="#6C3B99" opacity="0.8"/>
+  </g>
+  <text x="64" y="22" font-family="Space Grotesk, sans-serif" font-size="18" font-weight="700" fill="#E8F5EC">Doende Verde</text>
+  <text x="64" y="38" font-family="Inter, system-ui" font-size="12" letter-spacing="0.08em" fill="#7BD6A3">COMUNIDADE CANÁBICA</text>
+</svg>

@@ -1,0 +1,11 @@
+{
+  "name": "@doendeverde/config",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "exports": {
+    "./eslint": "./eslint/index.cjs",
+    "./prettier": "./prettier/index.cjs",
+    "./tsconfig": "./tsconfig/base.json"
+  }
+}

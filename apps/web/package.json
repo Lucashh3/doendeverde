@@ -1,0 +1,36 @@
+{
+  "name": "@doendeverde/web",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --project tsconfig.json --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@doendeverde/ui": "workspace:*",
+    "@supabase/auth-helpers-nextjs": "^0.9.0",
+    "@supabase/auth-helpers-react": "^0.4.1",
+    "@supabase/supabase-js": "^2.45.4",
+    "dayjs": "^1.11.10",
+    "next": "^14.2.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "@types/react": "^18.2.65",
+    "@types/react-dom": "^18.2.21",
+    "@types/testing-library__jest-dom": "^5.14.9",
+    "@types/testing-library__react": "^10.2.0",
+    "@testing-library/jest-dom": "^6.4.2",
+    "@testing-library/react": "^14.2.1",
+    "@vitest/coverage-v8": "^1.6.0",
+    "vite-tsconfig-paths": "^4.3.2",
+    "vitest": "^1.6.0"
+  }
+}

@@ -1,0 +1,7 @@
+# See https://supabase.com/docs/reference/cli/config for details
+project_id = "okcssrvjseaoansuxtvw"
+
+[db]
+  port = 54322
+  shadow_port = 54320
+  major_version = 15
