@@ -3,7 +3,6 @@ import { Metadata } from 'next';
 import { CategoryCard, type CategoryInfo } from '@/components/categories/category-card';
 import { CategoryStats } from '@/components/categories/category-stats';
 import { fetchCategories } from '@/lib/feed/fetch-feed';
-import { createSupabaseServerClient } from '@/lib/supabase/server';
 
 export const metadata: Metadata = {
   title: 'Categorias | Doende Verde',
@@ -11,7 +10,6 @@ export const metadata: Metadata = {
 };
 
 export default async function CategoriesPage() {
-  const supabase = createSupabaseServerClient();
 
   // Buscar categorias básicas
   const categories = await fetchCategories();
