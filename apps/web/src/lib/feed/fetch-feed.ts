@@ -195,6 +195,7 @@ export async function fetchFeedPosts(filters: FeedFilters = {}): Promise<{
 
 export async function fetchCategories() {
   const supabase = createSupabaseServerClient();
+
   const { data, error } = await supabase
     .from('categories')
     .select('slug, label, icon')

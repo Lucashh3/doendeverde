@@ -21,6 +21,7 @@ export function PostComposerForm({ categories }: PostComposerFormProps) {
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
   const [category, setCategory] = useState(categories[0]?.slug ?? 'experiencias');
+
   const [tags, setTags] = useState<string[]>([]);
   const [tagInput, setTagInput] = useState('');
   const [tagInputFocused, setTagInputFocused] = useState(false);
